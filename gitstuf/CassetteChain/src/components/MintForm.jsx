@@ -32,7 +32,7 @@ const MintForm = () => {
       ];
   
       const contract = new ethers.Contract(
-        "0xD2d8f11d60B578F86De6d788b931cb1D9197c5Bc",
+        "0xC917AD5613a070ff1F5c78C732Ffc199cB1f540F",
         abi,
         signer
       );

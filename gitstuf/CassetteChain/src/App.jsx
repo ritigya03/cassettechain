@@ -7,8 +7,8 @@ import Login from "./components/Login";
 import Playlists from "./components/Playlists";
 import MintForm from "./components/MintForm";
 import NFTDisplay from "./components/NFTDisplay";
-
-
+import Dashboard from './components/Dashboard';
+import AboutUs from './components/AboutUs';
 
 window.Buffer = Buffer;
 
@@ -40,7 +40,10 @@ const App = () => {
   return (
     <Router>
       <Routes>
+    
         <Route path="/" element={!token ? <Login /> : <Navigate to="/playlists" />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/callback" element={<Callback setToken={setToken} />} />
         <Route path="/playlists" element={token ? <Playlists token={token} setToken={setToken} /> : <Navigate to="/" />} />
         <Route path="/mint-form" element={<MintForm />} />

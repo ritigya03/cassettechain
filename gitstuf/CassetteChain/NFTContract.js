@@ -1,6 +1,6 @@
 import { ethers } from "ethers";
 
-const contractAddress = "0xD2d8f11d60B578F86De6d788b931cb1D9197c5Bc"; // Your NFT contract address
+const contractAddress = "0xC917AD5613a070ff1F5c78C732Ffc199cB1f540F"; // Your NFT contract address
 
 const abi = [
   "function tokenURI(uint256 tokenId) public view returns (string)"
